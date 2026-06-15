@@ -1,6 +1,6 @@
 ﻿while (true)
 {
-    Console.WriteLine("Enter Fist Number (or 'Exit' to quit): ");
+    Console.WriteLine("Enter First Number (or 'Exit' to quit): ");
     string input = Console.ReadLine();
 
     if (input.ToLower() == "exit")
@@ -13,18 +13,18 @@
     }
     if (!double.TryParse(input, out double num1))
         {
-        Console.WriteLine("Invalid number.");
-        continue;
+          Console.WriteLine("Invalid number.");
+          continue;
     }
 
-    Console.Write("Enter Second Numner: ");
+    Console.Write("Enter Second Number: ");
     string secondInput = Console.ReadLine();
     
     if (!double.TryParse(secondInput, out double num2))
 
 {
-    Console.WriteLine("Invalid number.");
-    continue;
+         Console.WriteLine("Invalid number.");
+         continue;
 }
 
 Console.WriteLine("Enter Operator ( +, -, *, /): ");
@@ -32,7 +32,7 @@ Console.WriteLine("Enter Operator ( +, -, *, /): ");
 
     double result = 0;
 
-
+ 
     if (Operator == "+")
     {
         result = num1 + num2;
@@ -61,5 +61,5 @@ Console.WriteLine("Enter Operator ( +, -, *, /): ");
         Console.WriteLine("Invalid Operator.");
         continue;
     }
-    Console.WriteLine($"Result: {result}");
+        Console.WriteLine($"Result: {result}");
 }
